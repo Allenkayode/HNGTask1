@@ -31,8 +31,8 @@ const endpoint_task1 = (req, res) => {
       current_day: day,
       utc_time: present_date,
       track: track,
-      //   github_file_url: githubFileUrl,
-      //   github_repo_url: githubRepoUrl,
+      github_file_url: https://github.com/Allenkayode/HNGTask1/tree/main,
+      github_repo_url: https://github.com/Allenkayode,
       status_code: 200,
     };
     let result = response;
