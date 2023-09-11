@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "endpointTask.js"
+      "dest": "app.js"
     }
   ]
 }
