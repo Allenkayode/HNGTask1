@@ -25,7 +25,7 @@ const endpoint_task1 = (req, res) => {
     const present_date = new Date();
 
     // GitHub Urls
-    const github_file = "https://github.com/Allenkayode/HNGTask1/tree/main";
+    const github_file = "https://github.com/Allenkayode/HNGTask1/tree/main/endpoint.js";
     const github_url = "https://github.com/Allenkayode/HNGTask1";
 
     const response = {
