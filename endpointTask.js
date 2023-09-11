@@ -1,12 +1,12 @@
 const endpoint_task1 = (req, res) => {
   try {
-    // const { slack_name, track } = req.query;
+    const { slack_name, track } = req.query;
 
-    // if (!slack_name || !track) {
-    //   return res
-    //     .status(400)
-    //     .json({ error: "slack-name and track query is required" });
-    // }
+    if (!slack_name || !track) {
+      return res
+        .status(400)
+        .json({ error: "slack-name and track query is required" });
+    }
     //Days of the Week
     const weekday = [
       "Sunday",
