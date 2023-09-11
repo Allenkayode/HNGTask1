@@ -25,14 +25,16 @@ const endpoint_task1 = (req, res) => {
     const present_date = new Date();
 
     // GitHub Urls
+    const github_file = https://github.com/Allenkayode/HNGTask1/tree/main;
+    const github_url = https://github.com/Allenkayode;
 
     const response = {
       slack_name: slack_name,
       current_day: day,
       utc_time: present_date,
       track: track,
-      github_file_url: https://github.com/Allenkayode/HNGTask1/tree/main,
-      github_repo_url: https://github.com/Allenkayode,
+      github_file_url: github_file ,
+      github_repo_url: github_url ,
       status_code: 200,
     };
     let result = response;
