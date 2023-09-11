@@ -29,16 +29,15 @@ const endpoint_task1 = (req, res) => {
     const github_url = "https://github.com/Allenkayode";
 
     const response = {
-      slack_name: slack_name,
+      slack_name: "Timi",
       current_day: day,
       utc_time: present_date,
-      track: track,
+      track: "backend",
       github_file_url: github_file ,
       github_repo_url: github_url ,
       status_code: 200,
     };
-    let result = response;
-    return res.json({ result });
+    return res.json({response });
   } catch (error) {
     let message = error.message;
     return console.log(message);
