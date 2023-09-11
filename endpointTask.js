@@ -26,7 +26,7 @@ const endpoint_task1 = (req, res) => {
 
     // GitHub Urls
     const github_file = "https://github.com/Allenkayode/HNGTask1/tree/main";
-    const github_url = "https://github.com/Allenkayode";
+    const github_url = "https://github.com/Allenkayode/HNGTask1";
 
     const response = {
       slack_name: "Timi",
