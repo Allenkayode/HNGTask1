@@ -22,7 +22,14 @@ const endpoint_task1 = (req, res) => {
     let day = weekday[d.getDay()];
 
     // Current Time
-    const present_date = new Date();
+  const now = new Date();
+  const year =  now.getUTCFullYear();
+  const month = String(now.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(now.getUTCDate()).padStart(2, '0');
+  const hours = String(now.getUTCHours()).padStart(2, '0');
+  const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+  const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+  const currentTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}Z`;
 
     // GitHub Urls
     const github_file = "https://github.com/Allenkayode/HNGTask1/tree/main/endpoint.js";
@@ -31,7 +38,7 @@ const endpoint_task1 = (req, res) => {
     const response = {
       slack_name: "Timi",
       current_day: day,
-      utc_time: present_date,
+      utc_time: currentTime,
       track: "backend",
       github_file_url: github_file ,
       github_repo_url: github_url ,
