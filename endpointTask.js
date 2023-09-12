@@ -19,7 +19,7 @@ const endpoint_task1 = (req, res) => {
     ];
 
     const d = new Date();
-    let day = weekday[d.getDay()];
+    let date = weekday[d.getDay()];
 
     // Current Time
   const now = new Date();
