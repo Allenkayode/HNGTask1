@@ -19,7 +19,7 @@ const endpoint_task1 = (req, res) => {
     ];
 
     const d = new Date();
-    let DayOfTheWeek = weekday[d.getDay()];
+    const date = weekday[d.getDay()];
 
     // Current Time
   const now = new Date();
@@ -37,7 +37,7 @@ const endpoint_task1 = (req, res) => {
 
     const response = {
       slack_name: "Timi",
-      current_day: DayOfTheWeek,
+      current_day: date,
       utc_time: currentTime,
       track: "backend",
       github_file_url: github_file ,
